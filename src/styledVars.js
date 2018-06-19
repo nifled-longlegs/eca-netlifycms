@@ -1,0 +1,6 @@
+export const yellow = 'rgba(255, 190, 0, 1)'
+export const blue = 'rgba(0, 97, 179, 1)'
+export const blueAlt = '#00AEEF'
+export const blueOpaque = 'rgba(0, 97, 179, 0.7)'
+// export const darkBlue = 'rgba(0, 56, 130, 1)'
+export const darkBlue = '#2F62AE'
