@@ -30,6 +30,7 @@ const ZoomSlider = () => {
           sliderData.map(item => {
             return (
               <ZoomSliderItem 
+                key={item.id}
                 bigTitle={item.bigTitle}
                 smallTitle={item.smallTitle}
                 head={item.head}

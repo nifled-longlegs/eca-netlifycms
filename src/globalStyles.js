@@ -288,6 +288,10 @@ export default injectGlobal`
       box-shadow: 11px 13px 40px -9px rgba(0,0,0,0.75);
       border-radius: 0.33em;
 
+      img {
+        width: 100%;
+      }
+
       .blog-card__content {
         padding: 1rem;
         text-align: justify;
@@ -361,6 +365,10 @@ export default injectGlobal`
 
       .blog-card {
         padding: 1rem;
+
+        img {
+          width: 100%;
+        }
       }
 
       .blog-social {
@@ -444,7 +452,7 @@ export default injectGlobal`
 
 
 
-  .blog-post {
+  /*.blog-post {
     width: 80%;
     margin: 0 auto;
 
@@ -465,5 +473,20 @@ export default injectGlobal`
     p:first-child {
       margin-top: 2rem;
     }
+  }*/
+
+  .content {
+    padding: 1rem;
+  }
+
+  .blog-post {
+   display: flex;
+   flex-direction: column;
+  }
+
+  .blog-post__image {
+    width: 25%;
+    min-width: 250px;
+    height: auto;
   }
 `

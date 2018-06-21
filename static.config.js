@@ -44,7 +44,7 @@ function getPosts () {
 export default {
 
   getSiteData: () => ({
-    title: 'React Static with Netlify CMS',
+    title: 'Comercial ECA',
   }),
   getRoutes: async () => {
     const posts = await getPosts()
@@ -58,8 +58,8 @@ export default {
         component: 'src/containers/About',
       },
       {
-        path: '/blog',
-        component: 'src/containers/Blog',
+        path: '/novedades',
+        component: 'src/containers/News',
         getData: () => ({
           posts,
         }),
