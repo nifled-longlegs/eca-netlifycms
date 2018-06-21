@@ -11,13 +11,13 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.0.0",
     "gray-matter": "^3.1.1",
     "klaw": "^2.1.1",
     "moment": "^2.20.1",
     "prop-types": "^15.6.1",
     "react": "^16.0.0",
-    "react-animate-on-change": "^2.1.0",
+    "react-animate-on-change": "^1.0.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.0.0",
     "react-google-maps": "^9.4.5",
@@ -25,14 +25,14 @@
     "react-icons": "^2.2.7",
     "react-markdown": "^3.1.0",
     "react-moment": "^0.7.0",
-    "react-plx": "^1.3.1",
+    "react-plx": "^1.1.2",
     "react-router": "^4.2.0",
     "react-slick": "^0.23.1",
     "react-static": "^5.1.10",
     "react-transition-group": "^1.2.1",
-    "reactstrap": "^6.1.0",
+    "reactstrap": "^5.0.0-beta.3",
     "rodal": "^1.6.3",
-    "styled-components": "^3.3.2"
+    "styled-components": "^3.2.3"
   },
   "devDependencies": {
     "eslint-config-react-tools": "1.x.x",
