@@ -50,7 +50,7 @@ export default withSiteData(() => (
           <p className="mission--vision__title">
             Hacia nuestros
             <span>
-              <ScrollAnimation animateIn="jackInTheBox" delay={100}>
+              <ScrollAnimation animateIn="jackInTheBox" delay={300}>
                 Colaboradores
               </ScrollAnimation>
             </span>
