@@ -51,6 +51,8 @@ export default injectGlobal`
 
   .mission--vision {
     margin: 0 auto;
+    color: ${vars.blue};
+    text-transform: uppercase;
 
     @media (min-width: 768px) { width: 45%; }
 
@@ -65,8 +67,7 @@ export default injectGlobal`
       }
     }
 
-    p {
-      color: ${vars.blue};
+    .mission-vission__desc {
       font-family: "SpartanMB Regular";
       font-size: 0.75rem;
       text-transform: uppercase;

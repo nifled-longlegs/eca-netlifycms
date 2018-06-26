@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { withSiteData } from 'react-static'
 import { Container } from 'reactstrap';
@@ -37,49 +38,49 @@ export default withSiteData(() => (
 
       <ScrollAnimation animateIn="fadeInUp" animateOnce>
         <div className="mission--vision">
-          <p className="mission--vision__title">
-            Hacia nuestros
+          <div className="mission--vision__title">
+            <p>Hacia nuestros</p>
             <span>
               <ScrollAnimation animateIn="jackInTheBox" delay={300}>
-                Clientes
+                <p>Clientes</p>
               </ScrollAnimation>
             </span>
-          </p>
-          <p>{ about.mission.clients }</p>
+          </div>
+          <p className="mission-vission__desc">{ about.mission.clients }</p>
 
-          <p className="mission--vision__title">
-            Hacia nuestros
+          <div className="mission--vision__title">
+            <p>Hacia nuestros</p>
             <span>
               <ScrollAnimation animateIn="jackInTheBox" delay={300}>
-                Colaboradores
+                <p>Colaboradores</p>
               </ScrollAnimation>
             </span>
-          </p>
-          <p>{ about.mission.collaborators }</p>
+          </div>
+          <p className="mission-vission__desc">{ about.mission.collaborators }</p>
 
           <Plx className='parallax-left' parallaxData={parallaxData.leftAltAlt}>
             <img src={BlurredImg} alt="Sello ECA"/>
           </Plx>
 
-          <p className="mission--vision__title">
-            Hacia nuestros
+          <div className="mission--vision__title">
+            <p>Hacia nuestros</p>
             <span>
               <ScrollAnimation animateIn="jackInTheBox" delay={100}>
-                Accionistas
+                <p>Accionistas</p>
               </ScrollAnimation>
             </span>
-          </p>
-          <p>{ about.mission.actionists }</p>
+          </div>
+          <p className="mission-vission__desc">{ about.mission.actionists }</p>
 
-          <p className="mission--vision__title">
-            Hacia la
+          <div className="mission--vision__title">
+            <p>Hacia la</p>
             <span>
               <ScrollAnimation animateIn="jackInTheBox" delay={100}>
-                Sociedad
+                <p>Sociedad</p>
               </ScrollAnimation>
             </span>
-          </p>
-          <p>{ about.mission.society }</p>
+          </div>
+          <p className="mission-vission__desc">{ about.mission.society }</p>
         </div>
       </ScrollAnimation>
 
@@ -89,7 +90,7 @@ export default withSiteData(() => (
 
       <ScrollAnimation animateIn="fadeInUp" animateOnce>
         <div className="mission--vision">
-          <p>{ about.vision }</p>
+          <p className="mission-vission__desc">{ about.vision }</p>
         </div>
       </ScrollAnimation>
 
