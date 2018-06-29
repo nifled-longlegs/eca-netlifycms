@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React from 'react'
 import { CSSTransitionGroup } from 'react-transition-group';
 import { Container, Row, Col, Button, Form, FormGroup, Input } from 'reactstrap';
 import { FaBuilding, FaPhone } from 'react-icons/lib/fa'
@@ -9,24 +10,22 @@ import Map from '../components/Footer/Map'
 
 
 class ContactPage extends React.Component {
+		componentWillMount() {
+			document.body.style.background = "linear-gradient(90deg, rgba(0,170,232,1) 0%, rgba(91,210,255,1) 35%, rgba(255,255,255,1) 100%)";
+		}
+		
+		componentDidMount() {
+			document.querySelector('.header__brand').style["-webkit-filter"] = "brightness(0) invert(1)"
+		}
 
-  componentWillMount() {
-		document.body.style.background = "linear-gradient(90deg, rgba(0,170,232,1) 0%, rgba(91,210,255,1) 35%, rgba(255,255,255,1) 100%)";
-	}
-	
-	componentDidMount() {
-		document.querySelector('.header__brand').style["-webkit-filter"] = "brightness(0) invert(1)"
-	}
+	  componentWillUnmount() {
+			document.body.style.background = null;
+			document.querySelector('.header__brand').style["-webkit-filter"] = ''
+	  }
 
-  componentWillUnmount() {
-		document.body.style.background = null;
-		document.querySelector('.header__brand').style["-webkit-filter"] = ''
-  }
-
-  render() {
+	  render() {
     return (
       <Container style={{ minHeight: '80vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-
 
       	<CSSTransitionGroup
           transitionName={{
@@ -120,4 +119,4 @@ class ContactPage extends React.Component {
   }
 }
 
-export default ContactPage;
+export default ContactPage

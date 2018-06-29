@@ -54,8 +54,16 @@ export default {
         component: 'src/containers/Home',
       },
       {
-        path: '/about',
-        component: 'src/containers/About',
+        path: '/contacto',
+        component: 'src/containers/Contact',
+      },
+      {
+        path: '/clientes',
+        component: 'src/containers/Clients',
+      },
+      {
+        path: '/servicios',
+        component: 'src/containers/Services',
       },
       {
         path: '/novedades',
