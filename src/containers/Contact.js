@@ -11,16 +11,22 @@ import Map from '../components/Footer/Map'
 
 class ContactPage extends React.Component {
 		componentWillMount() {
-			document.body.style.background = "linear-gradient(90deg, rgba(0,170,232,1) 0%, rgba(91,210,255,1) 35%, rgba(255,255,255,1) 100%)";
+			if (typeof document !== "undefined") {
+				document.body.style.background = "linear-gradient(90deg, rgba(0,170,232,1) 0%, rgba(91,210,255,1) 35%, rgba(255,255,255,1) 100%)";
+			}
 		}
 		
 		componentDidMount() {
-			document.querySelector('.header__brand').style["-webkit-filter"] = "brightness(0) invert(1)"
+			if (typeof document !== "undefined") {
+				document.querySelector('.header__brand').style["-webkit-filter"] = "brightness(0) invert(1)"
+			}
 		}
 
 	  componentWillUnmount() {
-			document.body.style.background = null;
-			document.querySelector('.header__brand').style["-webkit-filter"] = ''
+	  	if (typeof document !== "undefined") {
+				document.body.style.background = null;
+				document.querySelector('.header__brand').style["-webkit-filter"] = ''
+			}
 	  }
 
 	  render() {
